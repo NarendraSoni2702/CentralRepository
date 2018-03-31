@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1697" started-at="2017-06-10T17:28:43Z" finished-at="2017-06-10T17:28:44Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.testng.examples.RunCukesTest@e45f292]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="RunCukesByFeatureAndCompositionTest1.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1@5f2108b5]" name="feature" class="com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1"/>
+        <method signature="RunCukesByFeatureAndCompositionTest2.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2@31a5c39e]" name="feature" class="com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2"/>
+      </group> <!-- cucumber -->
+      <group name="examples-testng">
+        <method signature="RunCukesByCompositionGrp1_Test1.runCukes()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1@5bcab519]" name="runCukes" class="com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1"/>
+        <method signature="RunCukesByCompositionGrp1_Test2.runCukes()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2@6fd02e5]" name="runCukes" class="com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2"/>
+      </group> <!-- examples-testng -->
+    </groups>
+    <test name="Default test" duration-ms="1697" started-at="2017-06-10T17:28:43Z" finished-at="2017-06-10T17:28:44Z">
+      <class name="com.cucumber.testng.examples.RunCukesTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesTest@e45f292]" name="setUpClass" is-config="true" duration-ms="706" started-at="2017-06-10T22:58:43Z" finished-at="2017-06-10T22:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.testng.examples.RunCukesTest@e45f292]" name="feature" duration-ms="0" started-at="2017-06-10T22:58:43Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-10T22:58:43Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/google/common/primitives/Ints]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at org.testng.internal.annotations.JDK15TagFactory.createDataProviderTag(JDK15TagFactory.java:335)
+	at org.testng.internal.annotations.JDK15TagFactory.createTag(JDK15TagFactory.java:59)
+	at org.testng.internal.annotations.JDK15AnnotationFinder.findAnnotation(JDK15AnnotationFinder.java:217)
+	at org.testng.internal.annotations.JDK15AnnotationFinder.findAnnotation(JDK15AnnotationFinder.java:111)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:326)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:261)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:418)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: java.lang.ClassNotFoundException: com.google.common.primitives.Ints
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesTest@e45f292]" name="tearDownClass" is-config="true" duration-ms="117" started-at="2017-06-10T22:58:43Z" finished-at="2017-06-10T22:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.testng.examples.RunCukesTest -->
+      <class name="com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1@5bcab519]" name="beforeSuite" is-config="true" duration-ms="26" started-at="2017-06-10T22:58:43Z" finished-at="2017-06-10T22:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2@6fd02e5]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2017-06-10T22:58:43Z" finished-at="2017-06-10T22:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1@5bcab519]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-06-10T22:58:44Z" finished-at="2017-06-10T22:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1@5bcab519]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-06-10T22:58:44Z" finished-at="2017-06-10T22:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="runCukes()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1@5bcab519]" name="runCukes" duration-ms="68" started-at="2017-06-10T22:58:44Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2017-06-10T22:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCukes -->
+      </class> <!-- com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1 -->
+      <class name="com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1@5f2108b5]" name="setUpClass" is-config="true" duration-ms="36" started-at="2017-06-10T22:58:43Z" finished-at="2017-06-10T22:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1@5f2108b5]" name="feature" duration-ms="0" started-at="2017-06-10T22:58:43Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-10T22:58:43Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/google/common/primitives/Ints]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at org.testng.internal.annotations.JDK15TagFactory.createDataProviderTag(JDK15TagFactory.java:335)
+	at org.testng.internal.annotations.JDK15TagFactory.createTag(JDK15TagFactory.java:59)
+	at org.testng.internal.annotations.JDK15AnnotationFinder.findAnnotation(JDK15AnnotationFinder.java:217)
+	at org.testng.internal.annotations.JDK15AnnotationFinder.findAnnotation(JDK15AnnotationFinder.java:111)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:326)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:261)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:418)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1@5f2108b5]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2017-06-10T22:58:43Z" finished-at="2017-06-10T22:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1 -->
+      <class name="com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2@31a5c39e]" name="setUpClass" is-config="true" duration-ms="38" started-at="2017-06-10T22:58:44Z" finished-at="2017-06-10T22:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2@31a5c39e]" name="feature" duration-ms="0" started-at="2017-06-10T22:58:44Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-06-10T22:58:44Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/google/common/primitives/Ints]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at org.testng.internal.annotations.JDK15TagFactory.createDataProviderTag(JDK15TagFactory.java:335)
+	at org.testng.internal.annotations.JDK15TagFactory.createTag(JDK15TagFactory.java:59)
+	at org.testng.internal.annotations.JDK15AnnotationFinder.findAnnotation(JDK15AnnotationFinder.java:217)
+	at org.testng.internal.annotations.JDK15AnnotationFinder.findAnnotation(JDK15AnnotationFinder.java:111)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:326)
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:261)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:418)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2@31a5c39e]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2017-06-10T22:58:44Z" finished-at="2017-06-10T22:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2 -->
+      <class name="com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2@6fd02e5]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-06-10T22:58:43Z" finished-at="2017-06-10T22:58:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="runCukes()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2@6fd02e5]" name="runCukes" duration-ms="628" started-at="2017-06-10T22:58:44Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2017-06-10T22:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCukes -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2@6fd02e5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-06-10T22:58:44Z" finished-at="2017-06-10T22:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2">
+        <methods>
+          <include name="feature"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest2 -->
+      <class name="com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test2 -->
+      <class name="com.cucumber.testng.examples.RunCukesTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.testng.examples.RunCukesTest -->
+      <class name="com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1">
+        <methods>
+          <include name="feature"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.testng.examples.RunCukesByFeatureAndCompositionTest1 -->
+      <class name="com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.cucumber.testng.examples.RunCukesByCompositionGrp1_Test1 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
